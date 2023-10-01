@@ -1,0 +1,249 @@
+.main {
+  padding: 0px 20px;
+}
+
+.pokemon__logo {
+  top: 0;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon__image1 {
+  width: 250px;
+  margin-left: 4rem;
+}
+
+.pokemon__image2 {
+  width: 125px;
+  margin-right: 4rem;
+}
+
+.pokemon__container {
+  max-width: 1000px;
+  height: 1250px;
+  margin: 50px auto 30px auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.pokemon__header {
+  display: flex;
+}
+
+.pokemon__img {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.pokemon__img img {
+  width: 200px;
+}
+
+.pokemon__nick {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+.pokemon__id {
+  margin-left: 35px;
+}
+
+.pokemon__name {
+  color: #ef4035;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+.pokemon__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon__container__weight__height {
+  width: 200px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pokemon__weight,
+.pokemon__height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.pokemon__hr {
+  margin-bottom: 1em;
+  border: 1px solid #ccc4;
+}
+
+.pokemon__container__types__skills {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.pokemon__types__box {
+  display: flex;
+  gap: 15px;
+}
+
+.pokemon__skill__two,
+.pokemon__skill__one,
+.pokemon__type__two,
+.pokemon__type__one {
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding: 0.5em 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ef4035;
+  border: 1px solid rgba(211, 211, 211, 1);
+}
+
+.pokemon__type__p, .pokemon__skills__p{
+  margin-bottom: 20px;
+}
+
+.pokemon__container__stats {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.pokemon__header__stats {
+  display: grid;
+  grid-template-columns: minmax(100px, 150px) 1fr 70px;
+  width: 100%;
+}
+
+.pokemon__title__stats,
+.pokemon__line__stats,
+.pokemon__img__stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon__title__stats h2 {
+  font-weight: 500;
+}
+
+.pokemon__img__stats img {
+  width: 100%;
+}
+
+.pokemon__line__s {
+  height: 1px;
+  width: 100%;
+  background: rgba(211, 211, 211, 1);
+}
+
+.pokemon__body__stats {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10px;
+  padding: 10px 80px;
+}
+
+.pokemon__stat__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pokemon__stat__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon__stat__info h4 {
+  text-transform: uppercase;
+}
+
+.pokemon__stat__info p {
+  font-weight: 500;
+}
+
+.pokemon__stat__bar {
+  width: 100%;
+  height: 20px;
+  background: rgba(246, 246, 246, 1);
+  border-radius: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pokemon__bar {
+  background: linear-gradient(90deg, #fcd676 -2.25%, #e6901e 133.18%);
+  height: 100%;
+}
+
+.pokemon__container__movements {
+  max-width: 1000px;
+  min-height: 400px;
+  background-color: #fff;
+  margin: auto;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 30px;
+  margin-bottom: 40px;
+}
+
+.pokemon__movements {
+  columns: 5 100px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.pokemon__moves {
+  width: 100%;
+  padding: 10px;
+  background: rgba(229, 229, 229, 1);
+  color: #000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .pokemon__container__types__skills {
+    flex-direction: column;
+    margin: 60px 0;
+    gap: 40px;
+  }
+}

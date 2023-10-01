@@ -1,0 +1,125 @@
+.pokedex__container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pokemon__logo {
+  top: 0;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon__image1 {
+  width: 250px;
+  margin-left: 4rem;
+}
+
+.pokemon__image2 {
+  width: 125px;
+  margin-right: 4rem;
+}
+
+.pokedex__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pokedex__info {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.pokedex__p {
+  color: #ef4035;
+  color: #1a1a1f;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-left: 45px;
+}
+
+.pokedex__p span {
+  color: #ef4035;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.pokedex__form {
+  position: relative;
+  padding-left: 45px;
+}
+
+.pokedex__input {
+  border-radius: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.612);
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  color: #1a1a1f;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  padding: 0 1.5rem;
+  border: 2px solid #ef4035;
+}
+
+.pokedex__input:focus-visible {
+  outline: solid #ef4035;
+  border: 1px solid #ef4035;
+}
+
+.pokedex__button {
+  position: absolute;
+  left: 337px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 6rem;
+  max-width: 400px;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.35);
+  background-color: #ef4035;
+}
+
+.select__container select {
+  height: 30px;
+  width: 300px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 2px solid #ef4035;
+  color: #1a1a1f;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.select__container select:focus-visible {
+  outline: solid #ef4035;
+  border: 1px solid #ef4035;
+}
+
+.select__container option {
+  color: #1a1a1f;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.pokecard__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 750px) {
+  .pokedex__box {
+    flex-direction: column;
+  }
+}
